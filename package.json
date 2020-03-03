@@ -1,10 +1,10 @@
 {
-  "name": "Workshop",
+  "name": "workshop",
   "version": "1.0.0",
-  "description": "",
   "main": "gulpfile.js",
   "dependencies": {
     "gulp": "^3.9.1",
+    "gulp-cli": "^2.2.0",
     "gulp-connect": "^5.5.0",
     "gulp-imagemin": "^4.1.0",
     "gulp-postcss": "^7.0.1",
@@ -14,8 +14,17 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "npx npm-force-resolutions"
+  },
+  "resolutions": {
+    "graceful-fs": "4.2.3"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://git.epam.com/yevhen_isakov/workshop_2020_1.git"
+  },
+  "description": ""
 }
